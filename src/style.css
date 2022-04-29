@@ -1,0 +1,171 @@
+* {
+    gap: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* 60% 7dd3fc 30% 0369a1 10% 312e81 */
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+    background: url('./img/pexels-chan-walrus-941861.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+#header {
+    margin: 10px 15px;
+    display: flex;
+    background-color: rgba(125, 211, 252, 0.4);
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 90%;
+    justify-self: center;
+}
+
+.headerTop {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.headerTop img {
+    margin-bottom: -20px;
+
+}
+
+#header h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 3.5rem;
+    color: #312e81;
+    -webkit-text-stroke: 2px #bae6fd;
+    transition: color 0.2s linear;
+}
+
+#header h1:hover{    
+    color: #7e22ce;
+}
+
+#header h1::before {
+    display: block;
+    position: relative;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #312e81;
+    top: 27px;
+    right: 8px;
+    transform: rotate(45deg);
+    border: 1px solid #bae6fd;
+}
+
+#header h1::after {
+    display: block;
+    position: relative;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #312e81;
+    top: 27px;
+    right: -8px;
+    transform: rotate(45deg);
+    border: 1px solid #bae6fd;
+}
+
+#header h1:hover::before, #header h1:hover::after {
+    background-color: #7e22ce;
+    transition: background-color 200ms linear;
+}
+
+#header nav {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+#header button {
+    padding: 5px 30px;
+    background-color: rgba(29, 26, 75, 0.6);
+    border-radius: 10px;
+    border: 2px solid #bae6fd;
+    color: #bae6fd;
+    border-left: none;
+    border-top: none;
+    font-size: 1.5rem;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+#header button:hover {
+    background-color: rgba(29, 26, 75, 0.9);
+}
+
+/* Content */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+}
+
+.contentContainer {
+    background-color: rgba(125, 211, 252, 0.4);
+    width: 100%;
+    height: 85%;
+    margin: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: background-color 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentContainer:hover {
+    background-color: rgba(125, 211, 252, 0.75);
+}
+
+/* Home */
+
+.smallerContentContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 65%;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    background-color: rgba(29, 26, 75, 0.6);
+    padding: 50px;
+    color: rgba(125, 211, 252, 0.75);
+    -webkit-text-stroke: 0.5px black;
+
+}
+
+.smallerContentContainer h2 {
+    font-size: 4rem;
+
+}
+
+.smallerContentContainer  img{
+    height: 400px;
+    width: 400px;
+    border: 3px solid rgba(29, 26, 75, 1);
+    border-radius: 16px;
+    justify-self: center;
+    
+}
+
+.smallerContentContainer p {
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    border: 3px solid rgba(29, 26, 75, 1);
+}
